@@ -1,0 +1,111 @@
+{
+  "_aciklama": "GitHub'dan duzenleyebilirsin. Build gerekmez. aktif:false gizlenir. fiyat veya fiyatlar kullan.",
+
+  "ad_soyad": "Bitlis Bilgi",
+  "unvan": "Bitlis'te Instagram reklamı hakkında bilgi",
+  "hero_baslik": "Kategori, paylaşım türü ve paket seç, reklam vermek için ulaş",
+  "buton_metni": "Bilgi almak için ulaş",
+  "nav_cta": "Bilgi Al",
+  "secim_uyari": "Kategori, paylaşım türü ve paket seçin",
+  "kategori_ara_placeholder": "Kategori ara (ör. berber, emlak...)",
+  "kategori_sec_hint": "Önce kategorinizi seçin",
+  "tur_sec_hint": "Paylaşım türünü seçin",
+  "paket_sec_hint": "Paket seçin",
+  "kategori_bulunamadi": "Sonuç yok — «Diğer» seçip kendi alanınızı yazın",
+  "diger_etiket": "Kategori adını yaz",
+  "diger_placeholder": "Örn. Berber, Eczane, Dernek...",
+  "diger_uyari": "Diğer seçildi — kategori adını yazın",
+  "mesaj_onizleme": "Gönderilecek mesaj",
+  "mesaj_hazir": "Mesaj otomatik kopyalandı",
+  "mesaj_kopyalandi": "Mesaj kopyalandı — Instagram'da yapıştırın",
+  "mesaj_yapistir_notu": "Seçim yapınca mesaj otomatik kopyalanır; Instagram'da yapıştırın",
+  "paylasim_turleri_baslik": "Paylaşım türü",
+  "paketler_baslik": "Paket",
+
+  "platformlar": [
+    {
+      "id": "instagram",
+      "baslik": "Instagram",
+      "ikon": "fab fa-instagram",
+      "aktif": true,
+      "kullanici_adi": "bitlisbilgi",
+      "paylasim_turleri": [
+        { "id": "hikaye", "baslik": "Hikaye", "ikon": "fa-bookmark", "aktif": true },
+        { "id": "post", "baslik": "Post", "ikon": "fa-image", "aktif": true },
+        { "id": "reels", "baslik": "Reels", "ikon": "fa-film", "aktif": true }
+      ],
+      "paketler": [
+        {
+          "id": "tek",
+          "baslik": "Tek Paylaşım",
+          "kisa_detay": "Seçtiğin türde 1 paylaşım",
+          "ikon": "fa-bullhorn",
+          "aktif": true,
+          "one_cikan": false,
+          "fiyatlar": {
+            "hikaye": "1.000",
+            "post": "1.500",
+            "reels": "2.000"
+          }
+        },
+        {
+          "id": "hikaye-post",
+          "baslik": "Hikaye + Post",
+          "kisa_detay": "Hikaye ve post birlikte",
+          "ikon": "fa-images",
+          "aktif": true,
+          "one_cikan": false,
+          "turler": ["hikaye", "post"],
+          "fiyat": "2.000"
+        },
+        {
+          "id": "tam",
+          "baslik": "Tam Paket",
+          "kisa_detay": "Hikaye, post ve Reels",
+          "ikon": "fa-layer-group",
+          "aktif": true,
+          "one_cikan": true,
+          "fiyat": "4.500"
+        }
+      ]
+    },
+    {
+      "id": "twitter",
+      "baslik": "X (Twitter)",
+      "ikon": "fab fa-x-twitter",
+      "aktif": false,
+      "kullanici_adi": "bitlisbilgi",
+      "paylasim_turleri": [],
+      "paketler": []
+    },
+    {
+      "id": "telegram",
+      "baslik": "Telegram",
+      "ikon": "fab fa-telegram",
+      "aktif": false,
+      "kullanici_adi": "bitlisbilgi",
+      "paylasim_turleri": [],
+      "paketler": []
+    }
+  ],
+
+  "kategoriler": [
+    { "id": "isletme", "baslik": "Yerel İşletme", "ikon": "fa-store", "anahtar": "isletme,dukkan,market,magaza" },
+    { "id": "ogretmen", "baslik": "Öğretmen / Kurs", "ikon": "fa-chalkboard-teacher", "anahtar": "ogretmen,kurs,okul,egitim,dershane" },
+    { "id": "restoran", "baslik": "Restoran & Kafe", "ikon": "fa-utensils", "anahtar": "restoran,kafe,yemek,lokanta,pastane" },
+    { "id": "emlak", "baslik": "Emlak", "ikon": "fa-building", "anahtar": "emlak,konut,arsa,daire" },
+    { "id": "saglik", "baslik": "Sağlık", "ikon": "fa-heart-pulse", "anahtar": "saglik,doktor,klinik,hastane,eczane" },
+    { "id": "otel", "baslik": "Otel & Turizm", "ikon": "fa-hotel", "anahtar": "otel,turizm,pansiyon,gezi" },
+    { "id": "guzellik", "baslik": "Kuaför & Güzellik", "ikon": "fa-scissors", "anahtar": "kuafor,berber,guzellik,sac,nail" },
+    { "id": "otomotiv", "baslik": "Otomotiv & Servis", "ikon": "fa-car", "anahtar": "oto,araba,servis,tamir,galeri" },
+    { "id": "spor", "baslik": "Spor & Fitness", "ikon": "fa-dumbbell", "anahtar": "spor,fitness,gym,salon" },
+    { "id": "etkinlik", "baslik": "Etkinlik & Organizasyon", "ikon": "fa-calendar-days", "anahtar": "etkinlik,dugun,organizasyon,fotograf" },
+    { "id": "tarim", "baslik": "Tarım & Hayvancılık", "ikon": "fa-tractor", "anahtar": "tarim,ciftlik,hayvancilik,besicilik" },
+    { "id": "hukuk", "baslik": "Hukuk & Danışmanlık", "ikon": "fa-scale-balanced", "anahtar": "hukuk,avukat,danismanlik,muhasebe" },
+    { "id": "teknoloji", "baslik": "Teknoloji & Yazılım", "ikon": "fa-laptop-code", "anahtar": "yazilim,bilgisayar,telefon,teknoloji" },
+    { "id": "insaat", "baslik": "İnşaat & Tadilat", "ikon": "fa-hammer", "anahtar": "insaat,tadilat,ustu,mimar" },
+    { "id": "diger", "baslik": "Diğer", "ikon": "fa-pen", "ozel_giris": true, "anahtar": "diger,baska" }
+  ],
+
+  "mesaj_sablonu": "Merhaba, {kategori} kategorisinde Instagram {tur} — {paket} (fiyat: {fiyat}) için reklam vermek istiyorum. Reklam şablonunu kısa süre içinde ileteceğim."
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Bitlis Bilgi - Instagram reklamı nasıl paylaşılır? Paketleri incele, reklam hakkında bilgi al.">
+    <meta name="author" content="Bitlis Bilgi">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <meta name="theme-color" content="#A50000">
+    <title>Bitlis Bilgi | Reklam Bilgisi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script type="module" crossorigin src="/assets/B-nvyWtN.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/DoHyMDaE.css">
+</head>
+<body>
+    <div id="particles-bg"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="/logo.png" alt="Bitlis Bilgi" class="logo-img" width="40" height="40">
+                <span class="logo-text" data-bilgi="ad_soyad">Bitlis Bilgi</span>
+            </a>
+            <a href="#bilgi" class="nav-link nav-cta" data-bilgi="nav_cta">Bilgi Al</a>
+        </div>
+    </nav>
+
+    <section class="hero hero-compact" id="home">
+        <div class="container hero-inner">
+            <img src="/logo.png" alt="Bitlis Bilgi" class="hero-logo" width="120" height="120">
+            <h1 class="hero-title"><span class="gradient-text" data-bilgi="ad_soyad">Bitlis Bilgi</span></h1>
+            <p class="hero-subtitle" data-bilgi="unvan">Bitlis'te Instagram reklamı hakkında bilgi</p>
+            <p class="hero-tagline" data-bilgi="hero_baslik">Reklamın nasıl paylaşılacağını öğren, bilgi almak için ulaş</p>
+        </div>
+    </section>
+
+    <section class="picker" id="bilgi">
+        <div class="container">
+            <h2 class="section-title picker-heading">Bilgi almak için seçim yap</h2>
+
+            <div class="picker-panel">
+                <div class="picker-block">
+                    <div class="picker-step">
+                        <span class="picker-step-num">1</span>
+                        <h3 class="picker-title">Kategorin</h3>
+                    </div>
+                    <div class="category-search-wrap">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input
+                            type="search"
+                            id="category-search"
+                            class="category-search"
+                            autocomplete="off"
+                            enterkeyhint="search"
+                            placeholder="Kategori ara (ör. berber, emlak...)"
+                            data-bilgi-placeholder="kategori_ara_placeholder"
+                        >
+                    </div>
+                    <div class="category-grid" id="category-grid" role="radiogroup" aria-label="Reklam kategorisi"></div>
+                    <p class="category-empty" id="category-empty" hidden data-bilgi="kategori_bulunamadi">Sonuç yok — «Diğer» seçip kendi alanınızı yazın</p>
+                    <div class="category-other" id="category-other" hidden>
+                        <label class="category-other-label" for="category-other-input" data-bilgi="diger_etiket">Kategori adı</label>
+                        <input
+                            type="text"
+                            id="category-other-input"
+                            class="category-other-input"
+                            maxlength="80"
+                            autocomplete="off"
+                            placeholder="Örn. Berber, Eczane, Dernek..."
+                            data-bilgi-placeholder="diger_placeholder"
+                        >
+                    </div>
+                </div>
+
+                <div class="picker-block">
+                    <div class="picker-step">
+                        <span class="picker-step-num">2</span>
+                        <h3 class="picker-title"><span data-bilgi="paylasim_turleri_baslik">Paylaşım türü</span> <span class="picker-platform" id="picker-platform"></span></h3>
+                    </div>
+                    <div class="type-grid" id="type-grid" role="radiogroup" aria-label="Paylaşım türü"></div>
+                </div>
+
+                <div class="picker-block">
+                    <div class="picker-step">
+                        <span class="picker-step-num">3</span>
+                        <h3 class="picker-title"><span data-bilgi="paketler_baslik">Paket</span></h3>
+                    </div>
+                    <div class="package-grid" id="package-grid" role="radiogroup" aria-label="Reklam paketi"></div>
+                </div>
+
+                <div class="picker-summary" id="picker-summary" hidden>
+                    <p class="summary-label">Seçiminiz</p>
+                    <div class="summary-rows" id="summary-rows"></div>
+                    <div class="summary-message">
+                        <p class="summary-label summary-label-sm" data-bilgi="mesaj_onizleme">Gönderilecek mesaj</p>
+                        <p class="summary-message-text" id="summary-message"></p>
+                        <p class="copy-status" id="copy-status" hidden>
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span data-bilgi="mesaj_hazir">Mesaj otomatik kopyalandı</span>
+                        </p>
+                    </div>
+                </div>
+
+                <p class="picker-hint" id="picker-hint" data-bilgi="secim_uyari">Kategori, paylaşım türü ve paket seçin</p>
+
+                <div class="picker-action">
+                    <button type="button" id="instagram-send" class="btn-mega btn-mega-disabled" aria-disabled="true" disabled>
+                        <i class="fab fa-instagram"></i>
+                        <span data-bilgi="buton_metni">Bilgi almak için ulaş</span>
+                    </button>
+                    <p class="cta-hint" data-instagram-handle>@bitlisbilgi</p>
+                    <p class="picker-note" data-bilgi="mesaj_yapistir_notu">Mesaj otomatik kopyalanır; Instagram'da yapıştırın</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 <span data-bilgi="ad_soyad">Bitlis Bilgi</span></p>
+        </div>
+    </footer>
+
+    <a href="#" id="floating-ig" class="floating-ig floating-ig-disabled" aria-label="Instagram" aria-disabled="true">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
